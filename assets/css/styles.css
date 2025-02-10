@@ -11,6 +11,10 @@ html {
     scroll-behavior: smooth;
 }
 
+#services {
+    scroll-margin-top: 78px;
+}
+
 body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
@@ -90,6 +94,14 @@ a {
     margin-top: 24px;
     color: #656689;
     line-height: 1.88;
+}
+
+.section-label {
+    color: #5e6085;
+    text-align: center;
+    font-family: Sora, sans-serif;
+    font-weight: 600;
+    line-height: 1;
 }
 
 /* Header */
@@ -332,10 +344,7 @@ a {
 }
 
 .about__label {
-    color: #5e6085;
-    font-family: Sora, sans-serif;
-    font-weight: 600;
-    line-height: 1;
+    text-align: left;
 }
 
 .about__heading {
@@ -502,7 +511,7 @@ a {
 }
 
 .tab__list {
-    display: flex;
+    display: inline-flex;
     column-gap: 56px;
     position: relative;
 }
@@ -522,7 +531,7 @@ a {
     content: "";
     left: 0;
     bottom: 0;
-    width: 97%;
+    width: 100%;
     display: block;
     height: 2px;
     opacity: 0.07;
@@ -611,4 +620,113 @@ a {
     height: 1.5px;
     border-radius: 2px;
     background: currentColor;
+}
+
+/* Services */
+.services {
+    padding: 68px 0 100px;
+    background: #fff6ed;
+}
+
+.services__heading {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.services__content {
+    margin-top: 71px;
+    display: flex;
+    column-gap: 71px;
+}
+
+.services__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.services__item {
+    padding: 30px 28px;
+    width: 294px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 188, 122, 0.26);
+    background: #fff;
+}
+
+.services__item-heading {
+    position: relative;
+    color: #000958;
+    font-family: Sora, sans-serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1;
+    padding-left: 13px;
+}
+
+.services__item-heading::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    content: "";
+    display: inline-block;
+    width: 2px;
+    border-radius: 2px;
+    background-image: linear-gradient(90deg, #ff5b2e 0.39%, #ffa187 100.29%);
+}
+
+.services__item-desc {
+    margin-top: 18px;
+    color: #656689;
+    font-size: 1.4rem;
+    line-height: 1.71;
+}
+
+.services__item-more {
+    margin-top: 24px;
+    color: #34396a;
+    font-family: Sora, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    column-gap: 6px;
+}
+
+.services__item-more::after {
+    content: url(../icons/ArrowUpRight.svg);
+}
+
+.services__media-wrap {
+    text-align: center;
+}
+
+.services__media {
+    width: 440px;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    margin-top: -40px;
+}
+
+.services__media::after {
+    content: "";
+    display: block;
+    width: 410px;
+    height: 350px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #9df1fb 0%, #73d0db 108.14%);
+}
+
+.services__media-img {
+    position: absolute;
+    width: 100%;
+}
+
+.services__btn {
+    min-width: 214px;
+    margin-top: 45px;
+    border-radius: 31px;
 }

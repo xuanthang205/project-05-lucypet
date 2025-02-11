@@ -11,6 +11,7 @@ html {
     scroll-behavior: smooth;
 }
 
+#review,
 #services {
     scroll-margin-top: 78px;
 }
@@ -996,4 +997,127 @@ a {
     position: absolute;
     left: 0;
     top: 0;
+}
+
+/* Reviews */
+.review__inner {
+    padding: 53px 0;
+    display: flex;
+    align-items: center;
+    column-gap: 44px;
+}
+
+.review__control {
+    flex-shrink: 0;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    color: #ff5b2e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ff5b2e99;
+}
+
+.review__control:hover {
+    color: #fff;
+    border-color: #ff5b2e;
+    background-color: #ff5b2e;
+}
+
+.review__content {
+    overflow: hidden;
+    padding-bottom: 68px;
+}
+
+.review__list {
+    display: flex;
+}
+
+.review-item {
+    width: 100%;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    column-gap: 115px;
+}
+
+.review-item__media {
+    flex-shrink: 0;
+    width: 274px;
+    height: 427px;
+    border-radius: 137px;
+    position: relative;
+}
+
+.review-item__media::before {
+    content: "";
+    position: absolute;
+    inset: auto 0 0 0;
+    height: 82%;
+    border-radius: inherit;
+    background: #ffda54;
+}
+
+.review-item__img {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.review-item__content {
+    margin-top: 36px;
+}
+
+.review-item__heading {
+}
+
+.review-item__quote {
+    width: 553px;
+    margin-top: 24px;
+    color: #000;
+    font-size: 1.8rem;
+    line-height: 1.56;
+}
+
+.review-item__author {
+    display: flex;
+    align-items: center;
+    margin-top: 34px;
+    color: #282828;
+    font-family: Sora, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.review-item__author::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+    background-color: #000;
+    border-radius: 2px;
+    margin-right: 8px;
+}
+
+.swiper .swiper-pagination {
+    bottom: 0;
+}
+
+.swiper-pagination-bullet {
+    border: 1px solid #FF5B2E;
+    border-radius: 4px;
+    background-color: transparent;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.swiper-pagination-bullet-active {
+    width: 24px;
+    background-color: #FF5B2E;
 }
